@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            position: relative;
+            display: flex;
+            /* flex-wrap: nowrap; */
+            /* width: calc(6 * 200px + 16 * 5px); */
+            height: 200px;
+            /* overflow: hidden; */
+        }
+
+        ul {
+            position: absolute;
+            display: flex;
+            /* flex-shrink: 0; */
+        }
+
+        ul:nth-child(1)>li {
+            background-color: #2d75c2;
+        }
+
+        ul:nth-child(2)>li {
+            background-color: #2dc29a;
+        }
+
+        li {
+            width: 200px;
+            height: 200px;
+            background-color: #eb7f7f;
+            list-style: none;
+            text-align: center;
+            font-size: 40px;
+            line-height: 200px;
+            display: inline-block;
+            flex-shrink: 0;
+            margin: 0 8px;
+            /* vertical-align: middle; */
+        }
+
+        .appear {
+            animation: animation-appear 1300ms ease forwards;
+        }
+
+        .disappear {
+            animation: animation-disappear 1300ms ease forwards;
+        }
+
+        @keyframes animation-appear {
+            from {
+                transform: translate(100%);
+            }
+
+            to {
+                transform: translate(0%);
+            }
+        }
+
+        @keyframes animation-disappear {
+            from {
+                transform: translate(0);
+            }
+
+            to {
+                transform: translate(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button id="left">left</button>
+    <button id="right">right</button>
+    <button id="middle">middle</button>
+    <div class="wrapper">
+        <ul class="appear">
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+        <ul class="">
+            <li>2</li>
+            <li>2</li>
+            <li>2</li>
+            <li>2</li>
+            <li>2</li>
+            <li>2</li>
+        </ul>
+        <ul class="">
+            <li>3</li>
+            <li>3</li>
+            <li>3</li>
+            <li>3</li>
+            <li>3</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+    <script>
+
+        var left = document.getElementById("left");
+        var right = document.getElementById("right");
+        var middle = document.getElementById("middle");
+        var ul = document.getElementById("ul");
+
+        left.addEventListener('mouseover', ev => {
+            onClick(0);
+        });
+
+        middle.addEventListener('mouseover', ev => {
+            onClick(1);
+        });
+
+        right.addEventListener('mouseover', ev => {
+            onClick(2);
+        });
+
+        let oldLi = [...document.querySelectorAll('.wrapper > ul')][0];
+        let timeId = -1;
+
+        function onClick(index) {
+            clearTimeout(timeId);
+            const children = [...document.querySelectorAll('.wrapper > ul')];
+            const target = children[index];
+            target.style.display = 'block';
+            oldLi.classList.remove("appear");
+            oldLi.classList.add("disappear");
+            target.classList.remove("disappear");
+            target.classList.add("appear");
+
+            // timeId = setTimeout(() => {
+            //     oldLi.style.display = 'none';
+            // }, 1300);
+
+            oldLi = target;
+        }
+        // var 
+        // const li_width=
+    </script>
+</body>
+
+</html>
