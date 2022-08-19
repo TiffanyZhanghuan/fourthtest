@@ -1,0 +1,860 @@
+.header-wrapper .header {
+    width: 1200px;
+}
+
+.header-top-li {
+    margin-right: 30px;
+    /* padding-right: 30px; */
+    font-size: 14px;
+}
+
+.header-topleft-li-line {
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+.body-wrapper1 {
+    height: 397px;
+}
+
+.firstSearch {
+    left: 385px;
+}
+
+.column_wrapper {
+    width: 1200px;
+}
+
+.swiper-wrapper {
+    height: 397px;
+}
+
+.slider-btn {
+    width: 946px;
+    top: 97px;
+    margin-left: -600px;
+}
+
+.slider-btn .btn {
+    width: 26px;
+    height: 52px;
+    top: 91px;
+}
+
+.slider-btn .btnleft {
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/live_left_1200.png);
+
+}
+
+.slider-btn .btnright {
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/live_right_1200.png);
+}
+
+.slider-btn .con {
+    width: 808px;
+    padding-right: 138px;
+}
+
+.slider-btn .con .image {
+    width: 187px;
+    height: 234px;
+}
+
+.slider-btn .con ul li {
+    width: 187px;
+}
+
+.slider-btn .con .title {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 6px;
+    height: 40px;
+}
+
+.swiper-wrapper .floatText {
+    width: 200px;
+    height: 356px;
+    /* right: 233px; */
+    padding: 20px 27px 21px 27px;
+}
+
+.swiper-wrapper .floatText .live {
+    font-size: 20px;
+    padding-left: 28px;
+}
+
+.swiper-wrapper .floatText .liveon {
+    line-height: 60px;
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/icon-hot_hover_1200.png) no-repeat left center;
+    /* 蓝色 */
+    /* https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/icon-hot_hover_1200.png */
+}
+
+.swiper-wrapper .floatText .liveco {
+    line-height: 54px;
+    margin-top: 3px;
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/icon-jingxuan_1200.png
+) no-repeat left center;
+}
+
+.swiper-wrapper .floatText .onhover {
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/icon-hot_1200.png) no-repeat left center;
+}
+
+.swiper-wrapper .floatText .cohover {
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/icon-jingxuan_hover_1200.png
+) no-repeat left center;
+}
+
+
+.swiper-pagination .bullet {
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.nav-container {
+    height: 138px;
+    padding-bottom: 11px;
+}
+
+.nav-container .nav1-left {
+    width: 748px;
+    padding: 32px 0 0 0px;
+}
+
+/* 直播前面的图标 */
+/* .nav1_icon0{
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/ind02_1200_01.png)
+    no-repeat center center;
+    background-color: rgb(72, 97, 206);
+} */
+.nav-container .nav1-left .nav1-div {
+    padding: 0 18px;
+    margin-bottom: 20px;
+}
+
+.nav-container .nav1-left .nav1-div>a {
+    display: inline-block;
+}
+
+.nav-container .nav1-left .nav1-div i {
+    /* display: inline-block; */
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    margin-right: 12px;
+    float: left;
+}
+
+.nav-container .nav2-right {
+    width: 300px;
+    padding: 32px 10px 0 30px;
+}
+
+.nav-container .nav2-right li {
+    width: 100px;
+    float: left;
+}
+
+.nav-container .nav2-div {
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.hotToday {
+    padding-bottom: 0px;
+}
+
+.textTab .left h3 {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.nav1-line {
+    height: 75px;
+    width: 1px;
+    margin-top: 37px;
+    background: #c5c5c5;
+    float: left;
+}
+
+.nav1e-phone {
+    width: 55px;
+    /* margin-top: 39px; */
+    margin-left: 30px;
+    float: left;
+}
+
+.nav1e-phone i {
+    display: inline-block;
+    width: 35px;
+    height: 41px;
+    margin-left: 10px;
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/sj1200.png) no-repeat;
+    margin-bottom: 14px;
+}
+
+.nav1e-erweima {
+    width: 68px;
+    height: 68px;
+    margin-top: -5px;
+    margin-left: 18px;
+    border-radius: 5px;
+    box-shadow: #ccc 1px 1px 10px;
+}
+
+.nav1-end {
+    display: block;
+    float: left;
+    width: 110px;
+    margin-top: 39px;
+}
+
+.hotToday_content li {
+    width: 185px;
+    margin-bottom: 21px;
+    line-height: 26px;
+}
+
+.hotToday_content ul li.first {
+    width: 388px;
+}
+
+.end3 {
+    display: block !important;
+}
+
+.hotToday_content ul li .image {
+    height: 105px;
+    width: 185px;
+}
+
+.hotToday_content ul li.first .image {
+    height: 217px;
+    width: 388px;
+}
+
+.hotToday_content ul li.first .text {
+    padding: 26px 20px 33px 20px;
+}
+
+.hotToday_content ul li .title {
+    padding-top: 8px;
+    height: 52px;
+}
+
+/* 节目单图标 */
+.textTab .program {
+    /* font-size: 16px; */
+    margin-top: 12px;
+}
+
+.li_con {
+    width: 188px;
+}
+
+.ttct5 .cctv5_ul {
+    width: 1218px;
+}
+
+.ttct5 .cctv5_ul li {
+    width: 185px;
+}
+
+.ttcv5_con .img {
+    height: 233px;
+}
+
+.ttct5 li {
+    width: 185px;
+}
+
+.cctv5_ul2 {
+    width: 1218px;
+}
+
+.cctv5_ul2 li {
+    width: 185px;
+}
+
+.blue-wrapper {
+    height: 302px;
+    padding: 46px 0;
+    background-image: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/ind06_bg1200.png);
+}
+
+.blue-wrapper ul {
+    width: 1200px;
+    padding: 0;
+}
+
+.blue-wrapper ul li {
+    height: 94px;
+    width: 94px;
+    margin: 3px;
+}
+
+.blue-wrapper ul .cel02 {
+    width: 194px;
+}
+
+.blue-ul li a {
+    font-size: 18px;
+    /* line-height: 94px; */
+}
+
+/**********************************************************************
+/* 片库 */
+.column_wrapper {
+    width: 1200px;
+}
+
+.video_vault_con .common .img {
+    width: 185px;
+    height: 232px;
+
+}
+
+.video_vault_con .common .img img {
+    width: 185px;
+    height: 232px;
+}
+
+.video_vault_li {
+    width: 185px;
+}
+
+.video_vault_ul {
+    width: 1218px;
+}
+
+.video_vault_inside {
+    width: 1200px;
+    height: 316px;
+}
+
+.video_vault_contain {
+    height: 316px;
+}
+
+.video_vault_wrapper {
+    width: 1200px;
+    padding: 0 30px;
+    margin-left: -30px;
+    padding-bottom: 40px;
+}
+
+.video_vault_left h3 {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+/***********************************************************************************************************************
+/* 片库 */
+.video_vault_wrapper {
+    width: 1200px;
+    padding: 0 30px;
+    margin-left: -30px;
+    padding-bottom: 40px;
+}
+
+.video_vault_left h3,
+.watch_focus h3 {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.video_vault_con .common .img {
+    width: 185px;
+    height: 232px;
+
+}
+
+.video_vault_contain {
+    height: 316px;
+}
+
+.video_vault_inside {
+    width: 1200px;
+    height: 316px;
+}
+
+.video_vault_ul {
+    width: 1218px;
+}
+
+.video_vault_ul .end3 {
+    display: block !important;
+}
+
+.video_vault_li {
+    width: 185px;
+}
+
+.video_vault_con .common .img img {
+    width: 185px;
+    height: 232px;
+}
+
+/* 看点 */
+.watch_focus span {
+    margin-left: 21px;
+    margin-top: 9px;
+}
+
+.watch_focus span a {
+    font-size: 14px;
+    margin: 0 5px;
+    line-height: 30px;
+    padding: 0px 10px;
+}
+
+.watch_focus a:hover {
+    border-radius: 15px;
+}
+
+.watch_focus_left {
+    width: 812px;
+}
+
+.watch_focus_left li {
+    width: 185px;
+    margin-bottom: 15px;
+}
+
+.watch_focus_left li .image {
+    width: 185px;
+    height: 105px;
+}
+
+.watch_focus_left li .text .title {
+    margin-top: 7px;
+}
+
+.watch_focus_left li .text .brief {
+    line-height: 42px;
+}
+
+/* 右边收视top榜 */
+.watch_focus_right {
+    width: 388px;
+}
+
+/* 右侧列表背景图片 */
+.watch_focus_list_bg {
+    background: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/tingyin_bg.png) no-repeat 0 0;
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    z-index: 0;
+    top: 0px;
+    right: 20px;
+}
+
+/* 右侧列表标题 */
+.watch_focus_list_top {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 28px;
+    position: relative;
+    top: -2px;
+}
+
+/* 右侧列表内容 */
+.watch_focus_list_con {
+    height: 552px;
+    width: 388px;
+    background: #FFFFFF url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/bangdan_con_1200.png) no-repeat 0 0;
+}
+
+.watch_focus_alllist {
+    line-height: 64px;
+}
+
+/* 四个人头 */
+.four_people {
+    padding-top: 9px;
+}
+
+.four_people ul {
+    width: 1204px;
+}
+
+.four_people ul li {
+    width: 297px;
+    height: 105px;
+}
+
+.four_people ul li .text {
+    padding: 31px 20px 27px 0;
+}
+
+.listen_voice_right_con ul li {
+    height: 96px;
+}
+
+
+/* 广告 */
+.advert {
+    padding-top: 9px;
+}
+
+.advert3,
+.advert1,
+.advert4 {
+    display: none;
+}
+
+.advert2 {
+    display: block;
+    border-radius: 5px;
+}
+
+/* 拉长效果部分 */
+.length_effect {
+    width: 1218px;
+    padding-top: 9px;
+}
+
+.length_effect_item {
+    width: 185px;
+    height: 105px;
+}
+
+.length_effect_item .img {
+    width: 185px;
+}
+
+.length_effect_item .img_hover {
+    width: 591px;
+}
+
+.length_effect_con .end3 {
+    display: inline-block !important;
+}
+
+.length_effect_con .end2 {
+    display: none !important;
+}
+
+.length_effect_con .end1 {
+    display: none !important;
+}
+
+/* 央视大全 */
+.cctv_daqo_title .image {
+    height: 63px;
+}
+
+.cctv_daqo_title .image a {
+    width: 314px;
+    height: 39px;
+}
+
+.cctv_daqo_button table {
+    height: 139px;
+}
+
+.cctv_daqo_con {
+    width: 1198px;
+    min-height: 203px;
+}
+
+.cctv_daqo_box_left {
+    padding: 20px 15px 16px 30px;
+    width: 220px;
+    min-height: 166px;
+}
+
+
+.cctv_daqo_box_left .text p {
+    margin-bottom: 8px;
+    margin-top: 11px;
+}
+
+.cctv_daqo_box_right {
+    width: 932px;
+    float: right;
+    padding: 19px 0;
+}
+
+.cctv_daqo_box_right table td {
+    padding-left: 20px;
+    height: 32px;
+}
+
+/* dibu */
+.footer_wrapper {
+    height: 300px;
+}
+
+.footer_top {
+    width: 1200px;
+}
+
+.about_us {
+    padding-top: 28px;
+}
+
+.about_us dl.dl0 {
+    width: 285px;
+}
+
+.about_us dl.dl1 {
+    width: 285px;
+    padding-left: 42px;
+}
+
+.about_us dl.dl2 {
+    width: 220px;
+    padding-left: 32px;
+}
+
+.about_us dl.dl3 {
+    width: 294px;
+}
+
+.about_us dl dt {
+    font-size: 20px;
+    padding-bottom: 28px;
+    padding-top: 0;
+}
+
+.about_us dl.dl3 dt {
+    padding-bottom: 26px;
+    height: 31px;
+}
+
+.about_us dl dd {
+    height: 88px;
+}
+
+.about_us dl dd ul li {
+    width: 134px;
+    line-height: 14px;
+    padding-bottom: 21px;
+}
+
+.about_us dl.dl1 ul li {
+    width: 134px;
+}
+
+.about_us dl.dl2 ul li {
+    min-width: 104px;
+    max-width: 208px;
+}
+
+.about_us dl.dl3 ul li {
+    width: 118px;
+    padding-bottom: 16px;
+}
+
+.about_us dl.dl3 ul li.last {
+    width: 56px;
+}
+
+.about_us dl dd ul li a {
+    font-size: 14px;
+}
+
+.about_us .ask {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.about_us .ask {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.about_us .ask a {
+    font-size: 14px;
+}
+
+.footer_tbg {
+    height: 199px;
+}
+
+.footer_bottom {
+    height: 100px;
+    font-size: 12px;
+}
+
+.footer_bottom_con {
+    width: 1200px;
+}
+
+.class_popup_title .close {
+    margin-right: -600px;
+}
+
+.class_popup_contain {
+    width: 1200px;
+}
+
+.navigation {
+    width: 1200px;
+}
+
+.navigation_headpic {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.navigation_right .firstSearch {
+    margin-right: 20px;
+}
+
+.navigation_right .firstSearch .left {
+    width: 230px;
+    height: 28px;
+}
+
+
+.diapd .column_wrapper {
+    margin-left: -600px;
+}
+
+.diapd ul {
+    padding-top: 20px;
+}
+
+.diapd ul li {
+    margin: 0 72px 20px 0;
+}
+
+.dialmcom .title li a {
+    padding: 0 16px;
+}
+
+.dia_Complete .listbox li {
+    width: 200px;
+}
+
+.dia_Complete .listbox li {
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.diakd {
+    top: 60px;
+    margin: 0 -130px;
+    width: 260px;
+    height: 141px;
+}
+
+.diakdcon {
+    height: 141px;
+}
+
+.diakdcon ul {
+    padding: 28px 40px 4px 40px;
+}
+
+.diakdcon ul li {
+    width: 72px;
+}
+
+.diakdcon ul li .list {
+    width: 72px;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+
+.diakdcon ul li .list a {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.navigation_ul .display {
+    display: block;
+}
+
+.dia_all {
+    height: 347px;
+}
+
+.dia_all .column_wrapper {
+    margin-left: -600px;
+}
+
+.allpd i {
+    width: 115px;
+}
+
+.allpd ul {
+    width: 1085px;
+}
+
+.alllm {
+    margin-bottom: 10px;
+}
+
+.alllm i {
+    width: 115px;
+}
+
+.allpd ul li {
+    margin-right: 58px;
+}
+
+.float_con {
+    padding-top: 20px;
+    height: 656px;
+}
+
+.float ul li {
+    margin-bottom: 4px;
+}
+
+.float ul li a {
+    padding-top: 40px;
+    background-position: center 10px;
+}
+
+.nav_li .diacon_all {
+    left: 73px;
+    bottom: 108px;
+}
+
+.nav_li .nav_diacon .dialog_all .icon {
+    left: 243px;
+}
+
+
+.nav_li .nav_diacon .dialog_all ul li a {
+    display: inline-block;
+}
+
+.nav1-div .nav_record {
+    left: 248px;
+    bottom: 56px;
+}
+.nav_tv{
+    left: 32px!important;
+    bottom: 56px!important;
+}
+.nav_car{
+    left: 148px!important;
+    bottom: 56px!important
+}
+.nav1-div .nav_record .dialog_record .icon {
+    left: 39px;
+}
+
+.dia_record_box h5 a {
+    float: none;
+}
+
+.dia_record_box a {
+    display: inline-block;
+}

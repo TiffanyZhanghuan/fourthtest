@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/index1684_1899.css"
+		media="screen and (min-width: 1684px) and (max-width: 1899px)">
+	<link rel="stylesheet" href="./css/index1350_1683.css"
+		media="screen and (min-width: 1350px) and (max-width: 1683px)">
+	<link rel="stylesheet" href="./css/index1900.css" media="screen and (min-width:1900px)">
+	<title>Document</title>
+	<style>
+		.video_vault_wrapper {
+			width: 962px;
+			padding: 0 30px;
+			margin-left: -30px;
+			position: relative;
+			overflow: hidden;
+			padding-bottom: 40px;
+		}
+
+		.video_vault {
+			padding-bottom: 10px;
+		}
+
+		.video_vault_left {
+			/* display: inline-block; */
+			float: left;
+		}
+
+		.video_vault_left h3 {
+			font-size: 26px;
+			line-height: 46px;
+			font-weight: bold;
+			display: inline-block;
+		}
+
+		.video_vault_right {
+			padding-top: 6px;
+			/* display: inline-block; */
+			float: right;
+
+		}
+
+		.video_vault_right a {
+			width: 96px;
+			text-align: center;
+			font-size: 18px;
+			margin-left: 10px;
+			height: 30px;
+			line-height: 30px;
+			display: inline-block;
+		}
+
+		.video_vault_right a.cur {
+			border-radius: 15px;
+			font-weight: bold;
+			box-shadow: 0px 0px 10px rgb(51 51 51 / 15%);
+		}
+
+		.video_vault_contain {
+			height: 307px;
+			position: relative;
+		}
+
+		.video_vault_inside {
+			width: 962px;
+			height: 307px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+
+		.video_vault_ul {
+			width: 980px;
+			display: inline-block;
+			position: absolute;
+			/* left: 1222px; */
+			top: 0px;
+			/* display: none; */
+		}
+
+		.video_vault_li {
+			width: 178px;
+			margin-right: 18px;
+			float: left;
+			position: relative;
+			z-index: 1;
+		}
+
+		.video_vault_con {
+			margin-bottom: 4px;
+		}
+
+		.video_vault_con .common .img {
+			width: 178px;
+			height: 223px;
+			background: #e6e6e6 url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic152_44.png) no-repeat center center;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+
+		.video_vault_con .common .img img {
+			width: 178px;
+			height: 223px;
+			display: block;
+		}
+
+		.video_vault_con .common .text {
+			height: 44px;
+			line-height: 44px;
+			font-size: 14px;
+			width: 100%;
+			font-weight: bold;
+		}
+
+		.video_vault_con .common .text a {
+			color: #333333;
+		}
+
+		.column_wrapper {
+			height: 100%;
+			position: relative;
+			width: 962px;
+			margin: 0 auto;
+			/* background-color: #bf0614; */
+		}
+
+		.video_vault_con .hover {
+			width: 218px;
+			height: 307px;
+			position: absolute;
+			left: -20px;
+			top: -10px;
+			border-radius: 5px;
+			z-index: 333;
+			display: none;
+			background-color: #fff;
+			overflow: hidden;
+			box-shadow: 0px 0px 8px rgb(51 51 51 / 45%);
+		}
+
+		.video_vault_con .hover .img {
+			width: 218px;
+			height: 123px;
+			background: #e6e6e6 url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic165_47.png) no-repeat center center;
+		}
+
+		.video_vault_con .hover .img a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_vault_con .hover .img img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_vault_con .hover .text {
+			padding: 0 15px;
+		}
+
+		.video_vault_con .hover .text h3 {
+			font-size: 14px;
+			height: 42px;
+			line-height: 42px;
+			padding-top: 7px;
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		.video_vault_con .hover .text span {
+			font-size: 14px;
+			line-height: 20px;
+			height: 80px;
+			padding-bottom: 12px;
+			color: #999;
+			border-bottom: 1px solid #e8e8e8;
+			display: block;
+		}
+
+		.video_vault_con .hover .text span a {
+			color: #666;
+		}
+
+		.video_vault_con .hover .text .label {
+			line-height: 43px;
+			height: 43px;
+			font-size: 0px;
+		}
+
+		.video_vault_con .hover .text .label a {
+			font-size: 14px;
+			padding-right: 10px;
+			color: #666;
+			display: inline-block;
+		}
+
+		.video_vault_typeLabel {
+			height: 36px;
+			line-height: 36px;
+			width: 150px;
+			font-size: 14px;
+			text-align: center;
+			color: #999999;
+			margin: 0 auto;
+			background-image: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/ind07_textBg962_1200.png);
+		}
+
+		.video_vault_typeLabel a {
+			color: #999999;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.video_vault_typeLabel:hover {
+			box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.15);
+			border-radius: 5px;
+		}
+
+		@media screen and (min-width: 1684px) and (max-width: 1899px) {
+			.video_vault_typeLabel {
+				height: 42px;
+				line-height: 42px;
+				width: 160px;
+				font-size: 16px;
+				background-image: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/ind07_textBg1500_1710.png);
+			}
+
+			.video_vault_con .hover {
+				width: 238px;
+				height: 353px;
+				left: -20px;
+				top: -10px;
+			}
+
+			.video_vault_con .hover .img {
+				width: 238px;
+				height: 134px;
+			}
+
+			.video_vault_con .hover .text h3 {
+				font-size: 16px;
+				height: 52px;
+				line-height: 52px;
+				padding-top: 3px;
+			}
+
+			.video_vault_con .hover .text span {
+				font-size: 16px;
+				line-height: 24px;
+				height: 96px;
+				padding-bottom: 15px;
+			}
+
+			.video_vault_con .hover .text .label {
+				line-height: 52px;
+				height: 52px;
+			}
+
+			.video_vault_con .hover .text .label a {
+				font-size: 16px;
+			}
+
+			.video_vault_con .common .img {
+				width: 198px;
+				height: 248px;
+			}
+
+			.video_vault_con .common .img img {
+				width: 198px;
+				height: 248px;
+			}
+
+			.video_vault_con .common .text {
+				height: 58px;
+				line-height: 58px;
+				font-size: 16px;
+			}
+
+			.video_vault_con {
+				margin-bottom: 8px;
+			}
+
+			.video_vault_li {
+				width: 198px;
+
+			}
+
+			.video_vault_ul {
+				width: 1512px;
+			}
+
+			.video_vault_inside {
+				width: 1494px;
+				height: 356px;
+			}
+
+			.video_vault_contain {
+				height: 365px;
+			}
+
+			.video_vault_right {
+				padding-top: 10px;
+			}
+
+			.video_vault_right a {
+				width: 130px;
+				font-size: 20px;
+				margin-left: 10px;
+				height: 36px;
+				line-height: 36px;
+			}
+
+			.video_vault_right a.cur {
+				border-radius: 18px;
+			}
+
+			.video_vault_wrapper {
+				width: 1494px;
+				padding: 0 30px;
+				margin-left: -30px;
+				padding-bottom: 60px;
+				/* background-color: rgb(247, 82, 82); */
+			}
+
+			.video_vault {
+				padding-bottom: 20px;
+			}
+
+			.video_vault_left h3 {
+				font-size: 36px;
+				line-height: 56px;
+			}
+
+			.column_wrapper {
+				width: 1494px;
+			}
+		}
+
+		@media screen and (min-width: 1350px) and (max-width: 1683px) {
+
+			.column_wrapper {
+				width: 1200px;
+			}
+
+			.video_vault_con .common .img {
+				width: 185px;
+				height: 232px;
+
+			}
+
+			.video_vault_con .common .img img {
+				width: 185px;
+				height: 232px;
+			}
+
+			.video_vault_li {
+				width: 185px;
+			}
+
+			.video_vault_ul {
+				width: 1218px;
+			}
+
+			.video_vault_inside {
+				width: 1200px;
+				height: 316px;
+			}
+
+			.video_vault_contain {
+				height: 316px;
+			}
+
+			.video_vault_wrapper {
+				width: 1200px;
+				padding: 0 30px;
+				margin-left: -30px;
+				padding-bottom: 40px;
+			}
+
+			.video_vault_left h3 {
+				font-size: 28px;
+				line-height: 48px;
+			}
+		}
+
+		@media screen and (min-width:1900px) {
+			.video_vault_typeLabel {
+				height: 42px;
+				line-height: 42px;
+				width: 160px;
+				font-size: 16px;
+				background-image: url(https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/ind07_textBg1500_1710.png);
+			}
+
+			.video_vault_con .hover {
+				width: 238px;
+				height: 353px;
+				left: -20px;
+				top: -10px;
+			}
+
+			.video_vault_con .hover .img {
+				width: 238px;
+				height: 134px;
+			}
+
+			.video_vault_con .hover .text h3 {
+				font-size: 16px;
+				height: 52px;
+				line-height: 52px;
+				padding-top: 3px;
+			}
+
+			.video_vault_con .hover .text span {
+				font-size: 16px;
+				line-height: 24px;
+				height: 96px;
+				padding-bottom: 15px;
+			}
+
+
+			.video_vault_con .hover .text .label {
+				line-height: 52px;
+				height: 52px;
+			}
+
+			.video_vault_con .hover .text .label a {
+				font-size: 16px;
+			}
+
+			.column_wrapper {
+				width: 1710px;
+			}
+
+			.video_vault_con .common .img {
+				width: 198px;
+				height: 248px;
+			}
+
+			.video_vault_con .common .img img {
+				width: 198px;
+				height: 248px;
+			}
+
+			.video_vault_con .common .text {
+				height: 58px;
+				line-height: 58px;
+				font-size: 16px;
+			}
+
+			.video_vault_con {
+				margin-bottom: 8px;
+			}
+
+			.video_vault_li {
+				width: 198px;
+			}
+
+			.video_vault_ul {
+				width: 1728px;
+			}
+
+			.video_vault_inside {
+				width: 1710px;
+				height: 356px;
+			}
+
+			.video_vault_contain {
+				height: 365px;
+			}
+
+			.video_vault_right {
+				padding-top: 10px;
+			}
+
+			.video_vault_right a {
+				width: 130px;
+				font-size: 20px;
+				margin-left: 10px;
+				height: 36px;
+				line-height: 36px;
+			}
+
+			.video_vault_right a.cur {
+				border-radius: 18px;
+			}
+
+			.video_vault_wrapper {
+				width: 1710px;
+				padding-bottom: 60px;
+			}
+
+			.video_vault {
+				padding-bottom: 20px;
+			}
+
+			.video_vault_left h3 {
+				font-size: 36px;
+				line-height: 56px;
+			}
+
+			.video_vault_contain {
+				height: 365px;
+			}
+		}
+
+		/* 清除浮动，高度塌陷问题 */
+		.clear {
+			height: 0px;
+			line-height: 0;
+			font-size: 0;
+			overflow: hidden;
+			clear: both;
+		}
+
+		.visible {
+			animation: animation-visible 3000ms ease forwards;
+			/* background-color: rgb(224, 26, 26); */
+		}
+
+		.invisible {
+			animation: animation-invisible 3000ms ease forwards;
+		}
+
+		@keyframes animation-visible {
+			from {
+				transform: translateX(100%);
+			}
+
+			to {
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes animation-invisible {
+			from {
+				transform: translateX(0);
+			}
+
+			to {
+				transform: translateX(-100%);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 片库框架 -->
+	<div class="column_wrapper">
+		<div class="video_vault_wrapper">
+			<!-- 片库内容 -->
+			<div class="video_vault">
+				<!-- 片库标题 -->
+				<div class="video_vault_left">
+					<h3>片库</h3>
+				</div>
+				<div class="video_vault_right" id="video_vault_right">
+					<a href="/" class="cur">电视剧</a>
+					<a href="/">动画片</a>
+					<a href="/">纪录片</a>
+					<a href="/">特别节目</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="video_vault_contain" id="video_vault_contain">
+				<div class="video_vault_inside" id="video_vault_inside">
+					<!-- 四个ul -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/method.js"></script>
+	<script>
+		// 片库素材
+		let video_vault_menu = {
+			// 电影类型
+			label: {
+				0: ["都市", "革命", "农村", "战争", "谍战", "古装", "其他", "都市"],
+				1: ["剧情", "冒险", "奇幻", "益智", "童话", "亲子", "校园", "益智"],
+				2: ["人文历史", "社会", "人文历史", "自然", "人文历史", "探索", "人文历史", "社会"],
+				3: ["科教", "青少", "新闻", "青少", "经济", "新闻", "新闻", "新闻"]
+			},
+			// 鼠标移动后出现的视频
+			hover_gif: {
+				0: ["https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/27/1658888624686_203.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/7/21/1626852030029_385.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/18/1658110622654_790.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/14/1657763032556_615.gif",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/10/21/1634801325805_44.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/1/4/1641278735603_806.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif"
+				],
+				1: ["https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/13/1631512495143_635.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2020/11/17/1605582270263_466.gif",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/12/20/1639977809271_987.gif",
+					"https://p5.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/11/1657505974674_166.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/3/22/1647914608562_333.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif"
+				],
+				2: ["https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/14/1607936528092_607.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/30/1632987877963_674.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2020/11/16/1605515202780_234.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/17/1608175049951_205.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif"
+				],
+				3: ["https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/4/25/1619330668522_492.gif",
+					"https://p1.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/18/1658111104366_893.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/3/1/1614573391909_993.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/24/1608782310548_0.gif",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/10/27/1635322781385_600.gif",
+					"https://p1.img.cctvpic.com/photoAlbum/page/performance/img/2022/6/27/1656295615883_28.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif",
+					"https://p3.img.cctvpic.com/photoAlbum/templet/common/DEPA1628231077516717/zwPic1_1.gif"
+				]
+			},
+			// 电影名字
+			common_h3: {
+				0: ["《小镇警事》", "《烽火抗大》", "《高山清渠》", "《滹沱儿女》", "《密查》", "《少年神探狄仁杰》", "《家道颖颖之大考2020》", "《生活万岁》"],
+				1: ["《小精灵萨米》", "《百变校巴》第八季", "《小神驾到》", "《熊猫博士》", "《布鲁斯特公鸡》", "《小鹿蓝蓝》", "《大王日记》", "《超级工程小分队》"],
+				2: ["《古书复活记》", "《篮球少年》", "《永恒之轴》", "《祁连山国家公园》", "《炮火下的国宝》", "《水下中国》", "《河西走廊（2022）》", "《城市之岛》"],
+				3: ["《飞向月球》第二季", "《推开世界的门》", "《交通中国》", "《远方的童谣》", "《脱贫，健康先行》", "《香江永奔流》", "《直播大湾区》", "《大美边疆行》"]
+			},
+			// 电影介绍
+			hover_span: {
+				0: ["带您走进虎啸镇派出所，和所长郑路生、教导员吴迪、警花魏凌一起体味基层警察的工作和生活。", "讲述了抗日军政大学从筹备、建设到管理的艰难过程，讴歌抗大顽强不屈、艰苦奋斗的传统和精神。",
+					"主要表现了黄大发由一名普通的农民成长为一名优秀的中国共产党党员的过程。", "根据严肃报告文学作品《寻找平山团》改编而来，讲的是在抗日战争期间成长起来的平山团的故事。",
+					"该剧讲述了在国共合作的关键时期，共产党高级将领宣侠父离奇失踪，中共地下党员武仲明介入调查真相的故事。",
+					"该剧以古代悬疑推理破案为题材，讲述盛唐时期，少年狄仁杰上京都参加明经考试之后所遭遇的一系列故事。",
+					"主人公作为驻村第一书记，在脱贫攻坚战中秉持“扶人先扶人心”理念，最后成功帮助贫困户脱贫致富的感人故事。",
+					"讲述父亲老曾在昏迷醒来后反思自我，帮助四个子女找回生活、理解生活、拥抱生活的温情故事。"
+				],
+				1: ["该片讲述的是一只叫作萨米的小精灵和5个孩子生活在一起的故事。", "校巴游学团将开启全新的游学之旅，在百变校巴的带领下，与奇思妙想的游学团们共同解决问题，共同成长。",
+					"中国首部神话题材科普动画，让孩子主动去探索世界、观察世界，并实现孩子内心的幻想。", "每当小伙伴遇到问题，熊猫博士总会施以援手，面对未知的挑战和问题，他总是有许多解决方法。",
+					"每当有朋友提出问题，或是遇到困难, 布鲁斯特公鸡和小女孩玛吉就会到一个奇妙的世界中去寻求解决办法。", "本片讲述了在松鼠小镇中生活的小鹿蓝蓝与家人、朋友的日常生活。",
+					"从一只名叫“大王”的橘猫视角切入，讲述了前来支教的小王老师与一群乡村小学的孩子们之间发生的故事。", "建造、拆除、维修！当阳光海湾需要翻新，就一定能看到超级工程小分队的身影。"
+				],
+				2: ["本片采访拍摄数十位古籍保护专家与学者，记录他们在工作中的行动与努力，探寻背后的付出与坚持。", "通过对一支少年篮球队的观察，记录热血青春下的勇于追求、拼搏的果敢精神，以及他们内心深处的自我成长。",
+					"以北京中轴线为叙述主题，围绕不同时代发生的人与事展开叙述，解读中轴线的文化内涵及文化价值。", "通过祁连山野生动物的故事，展示了祁连山完整的生物链，记录生活在这里的野生动物的生存状况。",
+					"展现抗战期间中国珍贵古籍的坎坷命运，讲述抢救保护古籍的艰辛故事，赞美守护文明的抗争精神。", "通过独特视角，展现中国境内多彩的水下世界，发现鲜为人知的水下秘境，感受不一样的美。",
+					"系统梳理了河西走廊甚至整个中国西部的历史，呈现出跨越千年的雄壮、辉煌与苍凉。", "生活在崇明岛的人们经历着从向自然索取，到将生态破坏，再到与自然和谐共处的探索之路。"
+				],
+				3: ["用大量独家一手素材或首次公开的科学成果，为观众深入浅出地解读月球探索中的中国智慧。", "以符合青少年收视特点的精品纪录片为主要内容，帮助孩子们在暑期生活中开拓视野了解世界。",
+					"本片全方位、立体化、多角度展示新中国的交通事业，记录中国交通人沧桑追梦的建设征程。", "在民间音乐、民俗文化、地域生存环境的大背景下，发掘梳理优秀童谣，探究其隐藏的文化基因。",
+					"健康扶贫，是脱贫攻坚战中的一场重要战役。此片展现了我国健康扶贫的历史性成就。", "全景式呈现香港回归祖国后，特别是党的十八大以来，香港取得的历史性成就、历史性变革和未来的光明前景。",
+					"通过访谈、短片、连线等方式，多角度为您讲述发生在大湾区的人物故事。", "通过空中、水下、360度等独特视角，展现边疆的江宽海阔，物阜民丰，生活巨变。"
+				]
+
+			},
+			// common图片的地址
+			common_src: {
+				0: ["https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/27/1658888416098_5.jpg",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2021/7/21/1626850585315_375.jpg",
+					"https://p1.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/18/1658110455054_945.jpg",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/14/1657762694384_670.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/10/21/1634800841155_191.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/1/4/1641278460145_600.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/10/11/1633935446002_618.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/3/4/1614839149714_872.jpg"
+				],
+				1: ["https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/28/1658972022264_702.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/22/1658453576831_947.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/13/1631512489815_153.jpg",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2020/11/17/1605582264893_551.jpg",
+					"https://p5.img.cctvpic.com/photoAlbum/page/performance/img/2021/12/20/1639977530445_240.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/11/1657505720279_774.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/3/22/1647914305160_964.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/27/1632707789851_119.jpg"
+				],
+				2: ["https://p5.img.cctvpic.com/photoAlbum/page/performance/img/2021/1/27/1611728351753_202.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/14/1607936523487_340.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/2/3/1612328177639_582.jpg",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2021/9/30/1632987875302_149.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2020/11/16/1605515199462_891.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/17/1608175045212_162.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/4/1656928493852_745.jpg",
+					"https://p1.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/15/1608015802083_917.jpg"
+				],
+				3: ["https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2021/4/25/1619330838485_266.jpg",
+					"https://p5.img.cctvpic.com/photoAlbum/page/performance/img/2022/7/18/1658110989031_615.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/3/1/1614573383060_252.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2020/12/24/1608782305445_517.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2021/10/27/1635322456615_889.jpg",
+					"https://p3.img.cctvpic.com/photoAlbum/page/performance/img/2022/6/27/1656295536826_539.jpg",
+					"https://p4.img.cctvpic.com/photoAlbum/page/performance/img/2022/6/21/1655776486082_94.jpg",
+					"https://p2.img.cctvpic.com/photoAlbum/page/performance/img/2022/6/19/1655651049783_492.jpg"
+				]
+			}
+		}
+		// 获取ul父级节点
+		var video_vault_inside = document.getElementById("video_vault_inside");
+		// 创建空字符串
+		var video_vault_str = "";
+
+		for (var i = 0; i < 4; i++) {
+			video_vault_str += `
+					<ul class="video_vault_ul `
+			if (i == 0) {
+				video_vault_str += `visible`
+			} else {
+				video_vault_str += `invisible`
+			}
+			video_vault_str += `" id="video_vault_ul">
+					`
+			for (let j in video_vault_menu.label[0]) {
+				video_vault_str += `
+						<li style="z-index: 1;" class="video_vault_li `
+				if (j == 5) {
+					video_vault_str += `end3`
+				}
+				if (j == 6) {
+					video_vault_str += `end2`
+				}
+				if (j == 7) {
+					video_vault_str += `end1`
+				}
+				video_vault_str += `">
+							<!-- 视频轮播 -->
+							<div class="video_vault_con" id="video_vault_con">
+								<div class="common">
+									<div class="img">
+										<a href="">
+											<img src="${ video_vault_menu.common_src[i][j] }" alt="">
+										</a>
+									</div>
+									<div class="text">
+										<a href="">${ video_vault_menu.common_h3[i][j] }</a>
+									</div>
+								</div>
+								<div class="hover" style="display: none;">
+									<div class="img">
+										<a href="">
+											<img src="${ video_vault_menu.hover_gif[i][j] }" alt="">
+										</a>
+									</div>
+									<div class="text">
+										<h3>
+											<a href="">
+												${ video_vault_menu.common_h3[i][j] }
+											</a>
+										</h3>
+										<span>
+											<a href="">${ video_vault_menu.hover_span[i][j] }</a>
+										</span>
+										<div class="label">
+											<a href="">
+												${ video_vault_menu.label[i][j] }
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 类型注释 -->
+							<div class="video_vault_typeLabel">
+								<a href="/">${ video_vault_menu.label[i][j] }</a>
+							</div>
+						</li>`
+			}
+			video_vault_str += `
+						<div class="clear"></div>
+					</ul>
+			`
+		}
+
+		// 传入字符串参数
+		video_vault_inside.innerHTML = video_vault_str;
+		// 获取节点
+		var video_vault_right_a = document.getElementById("video_vault_right").getElementsByTagName('a');
+
+		var video_vault_hover = document.querySelectorAll("#video_vault_con .hover");
+
+		var video_vault_con = document.getElementsByClassName("video_vault_con");
+		// 鼠标移动到obj上该obj添加cur的class，移除则取消
+		function add_re_class(index, obj1, obj2, obj_class) {
+			obj1[index].onmouseover = () => {
+				obj2[index].classList.add(obj_class);
+				for (var i = 0; i < obj1.length; i++) {
+					if (i != index) {
+						obj2[i].classList.remove(obj_class);
+					}
+				}
+			}
+		}
+		// 直播导视下方图片调用该函数
+		for (let index = 0; index < video_vault_right_a.length; index++) {
+			add_re_class(index, video_vault_right_a, video_vault_right_a, "cur");
+		}
+
+		// 鼠标移动到obj1上出发事件使obj2出现，移除使得obj2消失
+		function beblock(obj1, obj2, i) {
+			obj1[i].onmouseover = () => {
+				obj2[i].style.display = "block";
+			}
+			obj1[i].onmouseout = () => {
+				obj2[i].style.display = "none";
+			}
+		}
+		// 片库调用该函数
+		for (let index = 0; index < video_vault_con.length; index++) {
+			beblock(video_vault_con, video_vault_hover, index);
+		}
+
+		let timeId = -1;
+		let lastIndex = 0;
+		let lastElement = undefined;
+
+		// 动画效果函数
+		document.getElementById("video_vault_right").addEventListener('mouseover', ev => {
+			const children = [...document.querySelector('#video_vault_inside').children];
+			let index;
+			// 判断是第几个li
+			for (let i = 0; i < children.length; i++) {
+				// const element = array[index];
+				if (event.target.innerHTML == video_vault_right_a[i].innerHTML) {
+					index = i;
+				}
+			}
+			// const index = ev.target.dataset['index'];
+			if (!index || lastIndex === parseInt(index)) {
+				return;
+			}
+			if (lastElement) {
+				clearTimeout(timeId);
+				if (children[index] !== lastElement) {
+					lastElement.style.display = 'none';
+					lastElement = undefined;
+				}
+			}
+			children.forEach((element, idx) => {
+				const classList = element.classList;
+				if (idx === parseInt(index)) {
+					element.style.display = 'flex';
+					classList.remove('invisible');
+					classList.add('visible');
+				} else if (classList.contains('visible')) {
+					classList.replace('visible', 'invisible');
+					lastElement = element;
+					timeId = setTimeout(() => {
+						element.style.display = 'none';
+						lastElement = undefined;
+					}, 3000);
+				}
+			});
+
+			lastIndex = parseInt(index);
+		});
+	</script>
+</body>
+
+</html>
